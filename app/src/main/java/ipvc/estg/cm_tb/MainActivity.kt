@@ -10,7 +10,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //teste no git
-        //boas
-        //ui ui ui
+
+
+
+        //teste Pibda1
     }
 }
