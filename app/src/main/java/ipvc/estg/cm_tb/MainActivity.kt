@@ -1,7 +1,9 @@
 package ipvc.estg.cm_tb
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -9,10 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //teste no git
-
-
-
-        //teste Pibda1
+        val reportActivity = findViewById<Button>(R.id.buttonServicoReports)
+        reportActivity.setOnClickListener {
+            val IntentOpenReports = Intent(this, ReportActivity::class.java)
+            startActivity(IntentOpenReports)
+        }
     }
 }

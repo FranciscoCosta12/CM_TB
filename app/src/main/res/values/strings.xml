@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">CM_TB</string>
+    <string name="app_name">ParkingESTG</string>
+    <string name="title_activity_report">ReportService</string>
+    <string name="select">SelectItem</string>
 </resources>
