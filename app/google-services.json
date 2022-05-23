@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "95587318629",
+    "firebase_url": "https://cm-tb-ab057-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "cm-tb-ab057",
+    "storage_bucket": "cm-tb-ab057.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95587318629:android:309e3e562302b36b47ff8c",
+        "android_client_info": {
+          "package_name": "ipvc.estg.cm_tb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95587318629-9aq6g7gput4c4nbefmrmjb8qhb1pldh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_g1QZWA3H53No3SDJNUfRiWT09_UZG6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95587318629-9aq6g7gput4c4nbefmrmjb8qhb1pldh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

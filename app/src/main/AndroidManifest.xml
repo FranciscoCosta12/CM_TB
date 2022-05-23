@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CM_TB">
         <activity
+            android:name=".Checker_map"
+            android:exported="false" />
+        <activity
+            android:name=".Check_map"
+            android:exported="false" />
+        <activity
             android:name=".Map"
             android:exported="false" />
         <activity android:name=".MainActivity">

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checker_map">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:onClick="bt1OnClick"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/numbers"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:hint="Introduza o parque"
+        android:completionThreshold="1"
+        ></AutoCompleteTextView>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numbers"
+        android:text="Desmarcar"
+        android:textSize="23dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/switch1"
+        android:layout_below="@+id/numbers"
+        android:text="Marcar"
+        android:textSize="23dp"
+        />
+
+    <Button
+        android:id="@+id/btsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="20dp"
+        android:text="Salvar"
+        />
+
+</RelativeLayout>
