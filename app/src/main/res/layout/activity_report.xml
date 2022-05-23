@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Reports"
-        android:textSize="40dp"></TextView>
+        android:textSize="40dp"
+        android:id="@+id/reportTitle"
+        android:layout_marginTop="50dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -21,43 +24,102 @@
     </Button>
 
     <TextView
+        android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/reportTitle"
+        android:layout_margin="16dp"
         android:text="Utilizador"
-        android:layout_margin="10dp"
-        android:layout_below="@+id/buttonBackMainMenu"
-        android:textSize="25dp"
-        android:id="@+id/user"></TextView>
+        android:textSize="25dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:id="@+id/userEdit"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp">
+    </EditText>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Razões"
-        android:layout_margin="10dp"
-        android:layout_below="@+id/user"
+        android:text="Razão"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/userEdit"
         android:textSize="25dp"
-        android:id="@+id/razao"></TextView>
+        android:id="@+id/razao"/>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/userEdit"
+        android:layout_alignLeft="@+id/razao"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:drawable/btn_dropdown"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/razao"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/spinnerResult"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descrição"
-        android:layout_margin="10dp"
-        android:layout_below="@+id/razao"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/spinnerResult"
         android:textSize="25dp"
-        android:id="@+id/descricao"></TextView>
+        android:id="@+id/descricao"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="@string/select"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-        <AutoCompleteTextView
-            android:id="@+id/auto_complete_txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none"/>
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_below="@+id/descricao"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/descricaoEdit"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descricaoEdit"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonReport"
+        android:text="Reportar"
+        android:layout_marginTop="140dp"/>
+
+    <CheckBox
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/descricaoEdit"
+        android:layout_margin="16dp"
+        android:id="@+id/checkBoxReports"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkBoxReports"
+        android:layout_below="@+id/descricaoEdit"
+        android:layout_marginTop="16dp"
+        android:text="Pretendo receber Newsletters referentes a este assunto."/>
 
 </RelativeLayout>
