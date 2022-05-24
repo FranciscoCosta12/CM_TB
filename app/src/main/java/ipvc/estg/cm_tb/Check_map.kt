@@ -29,12 +29,13 @@ class Check_map : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+
         for(i in idArray.indices){
             val button = intent.getStringExtra("button")
             val status = intent.getStringExtra("status")
-            if(button == (i+1).toString() && status == "false"){
+            if(status == "false"){
                 findViewById<Button>(idArray[i]).setBackgroundColor(Color.RED)
-            }else if(button == (i+1).toString() && status == "true"){
+            }else if(status == "true"){
                 findViewById<Button>(idArray[i]).setBackgroundColor(Color.GREEN)
             }else{
                 //findViewById<Button>(idArray[i]).setBackgroundColor(Color.GREEN)
