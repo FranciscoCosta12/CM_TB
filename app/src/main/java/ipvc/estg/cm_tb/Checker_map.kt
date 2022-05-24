@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.*
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlin.collections.Map
 
 class Checker_map : AppCompatActivity() {
 
@@ -62,6 +63,19 @@ class Checker_map : AppCompatActivity() {
 
     fun bt1OnClick(view: View) {
         val intent = Intent(this, Check_map:: class.java)
+        startActivity(intent)
+    }
+
+    fun btMap(view: View) {
+        val intent = Intent(this, Map:: class.java)
+        startActivity(intent)
+    }
+    fun btPerfil(view: View) {
+        val intent = Intent(this, Perfil:: class.java)
+        startActivity(intent)
+    }
+    fun btLogout(view: View) {
+        val intent = Intent(this, LoginActivity:: class.java)
         startActivity(intent)
     }
 

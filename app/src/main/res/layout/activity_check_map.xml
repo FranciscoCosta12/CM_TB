@@ -6,21 +6,63 @@
     android:layout_height="match_parent"
     tools:context=".Check_map">
 
-    <Button
-        android:id="@+id/back"
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="back"
-        android:onClick="bt1OnClick"/>
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mapBtn"
+            android:text="Map"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="#447144"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:onClick="btMap"></Button>
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+        <Button
+            android:id="@+id/perfilBtn"
+            android:text="Perfil"
+            android:padding="5dp"
+            android:background="@color/background"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:onClick="btPerfil"></Button>
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
 
-
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_arrow"
+            android:text="Logout"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck"
+            android:onClick="btLogout"
+            ></Button>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/back"
+        android:layout_marginTop="38dp"
         android:text="1"
         />
 
@@ -28,9 +70,8 @@
         android:id="@+id/btn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/back"
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
         android:text="2" />
 
     <Button
@@ -38,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/back"
+        android:layout_marginTop="38dp"
         android:text="3" />
 
     <Button

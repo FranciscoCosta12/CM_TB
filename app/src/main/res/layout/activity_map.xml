@@ -8,6 +8,55 @@
     android:scrollbars="vertical"
     tools:context=".Map">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/mapBtn"
+            android:text="Map"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="#447144"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:onClick="btMap"></Button>
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+        <Button
+            android:id="@+id/perfilBtn"
+            android:text="Perfil"
+            android:padding="5dp"
+            android:background="@color/background"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back_arrow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:onClick="btPerfil"></Button>
+        <View
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"></View>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_arrow"
+            android:text="Logout"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TextContrastCheck"
+            android:onClick="btLogout"
+            ></Button>
+    </LinearLayout>
     <com.ortiz.touchview.TouchImageView
         android:id="@+id/img"
         android:layout_width="match_parent"
@@ -22,11 +71,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="21dp"
         android:background="#000"
+        android:onClick="bt1OnClick"
         android:text="+"
-        android:textSize="32dp"
-        android:onClick="bt1OnClick"/>
+        android:textSize="32dp" />
 
 </RelativeLayout>

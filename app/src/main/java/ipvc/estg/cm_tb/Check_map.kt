@@ -48,4 +48,17 @@ class Check_map : AppCompatActivity() {
         startActivity(intent)
 
     }
+
+    fun btMap(view: View) {
+        val intent = Intent(this, kotlin.collections.Map:: class.java)
+        startActivity(intent)
+    }
+    fun btPerfil(view: View) {
+        val intent = Intent(this, Perfil:: class.java)
+        startActivity(intent)
+    }
+    fun btLogout(view: View) {
+        val intent = Intent(this, LoginActivity:: class.java)
+        startActivity(intent)
+    }
 }
