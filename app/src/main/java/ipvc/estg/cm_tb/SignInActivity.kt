@@ -10,6 +10,7 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.signin.*
+import kotlin.collections.Map
 
 class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?){
@@ -38,6 +39,8 @@ class SignInActivity : AppCompatActivity() {
                             textViewResponse.text =  "Sign In com sucesso. "
                             val user = auth.currentUser
                             updateUI(user, editTextEmail.text.toString() )
+                            val intent = Intent(this, Map:: class.java)
+                            startActivity(intent)
                         } else
                             textViewResponse.text = "Email ou Password inválidos"
                     }

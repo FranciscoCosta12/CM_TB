@@ -7,9 +7,13 @@ import android.view.View
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val intent = Intent(this, SignInActivity:: class.java)
+        startActivity(intent)
 
     }
 

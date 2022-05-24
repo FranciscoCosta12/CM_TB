@@ -15,11 +15,14 @@ import com.google.firebase.database.FirebaseDatabase
 
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlin.collections.Map
 
 
 class LoginActivity : AppCompatActivity() {
+
     private lateinit var auth: FirebaseAuth
     private lateinit var dbRef: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         auth = Firebase.auth
         super.onCreate(savedInstanceState)
@@ -91,6 +94,8 @@ class LoginActivity : AppCompatActivity() {
         dbRef.child(userNumero).setValue(user)
             .addOnCompleteListener{
                 Toast.makeText(this, "Data inserida com sucesso", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, Map:: class.java)
+                startActivity(intent)
             }.addOnFailureListener{ err ->
                 Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
 
