@@ -13,20 +13,60 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:orientation="horizontal"
             android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-                <ImageView
-                    android:padding="5dp"
-                    android:layout_alignParentStart="true"
-                    android:src="@drawable/ic_back_arrow"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"></ImageView>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/mapBtn"
+                        android:text="Map"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:onClick="btnMapa"
+                        android:background="#447144"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_back_arrow"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"></Button>
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"></View>
+                    <Button
+                        android:id="@+id/perfilBtn"
+                        android:text="Perfil"
+                        android:padding="5dp"
+                        android:background="@color/background"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_back_arrow"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"></Button>
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"></View>
+                    <Button
+                        android:id="@+id/logoutBtn"
+                        android:text="Logout"
+                        android:padding="5dp"
+                        android:background="@color/background"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/ic_back_arrow"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"></Button>
+                </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
 
@@ -52,6 +92,7 @@
             <include layout="@layout/item_add"></include>
 
             <include layout="@layout/item_email"></include>
+
             <include layout="@layout/item_info"></include>
         </LinearLayout>
     </ScrollView>

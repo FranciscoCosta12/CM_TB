@@ -24,8 +24,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
+                    android:id="@+id/nomeText"
                     android:layout_marginTop="15dp"
-                    android:text="Duarte Silva"
+                    android:text="Duarte"
                     android:gravity="center"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -33,6 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></TextView>
                 <TextView
+                    android:id="@+id/idText"
                     android:layout_marginTop="2dp"
                     android:text="22302"
                     android:gravity="center"
