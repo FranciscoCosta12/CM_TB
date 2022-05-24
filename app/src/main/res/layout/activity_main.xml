@@ -7,10 +7,19 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/btlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Login"
+        android:onClick="login"></Button>
+
+    <Button
         android:id="@+id/btn_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnOnClick"
-        android:text="@string/map" />
+        android:text="@string/map"
+        android:layout_below="@+id/btlogin"/>
 
 </RelativeLayout>
