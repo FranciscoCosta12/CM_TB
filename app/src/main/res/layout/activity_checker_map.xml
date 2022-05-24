@@ -13,11 +13,21 @@
         android:text="back"
         android:onClick="bt1OnClick"/>
 
+    <TextView
+        android:id="@+id/tvuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="22310"
+        android:layout_below="@+id/back"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        />
+
     <AutoCompleteTextView
         android:id="@+id/numbers"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/back"
+        android:layout_below="@+id/tvuser"
         android:hint="Introduza o parque"
         android:completionThreshold="1"
         ></AutoCompleteTextView>
@@ -38,6 +48,7 @@
         android:layout_below="@+id/numbers"
         android:text="Marcar"
         android:textSize="23dp"
+        android:textColor="@color/black"
         />
 
     <Button

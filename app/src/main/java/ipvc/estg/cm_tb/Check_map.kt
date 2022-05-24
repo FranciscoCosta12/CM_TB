@@ -1,6 +1,7 @@
 package ipvc.estg.cm_tb
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -26,6 +27,17 @@ class Check_map : AppCompatActivity() {
                 val intent = Intent(this@Check_map, Checker_map::class.java)
                 intent.putExtra("index", (idArray.indexOf(i)+1).toString())
                 startActivity(intent)
+            }
+        }
+        for(i in idArray.indices){
+            val button = intent.getStringExtra("button")
+            val status = intent.getStringExtra("status")
+            if(button == (i+1).toString() && status == "false"){
+                findViewById<Button>(idArray[i]).setBackgroundColor(Color.RED)
+            }else if(button == (i+1).toString() && status == "true"){
+                findViewById<Button>(idArray[i]).setBackgroundColor(Color.GREEN)
+            }else{
+                //findViewById<Button>(idArray[i]).setBackgroundColor(Color.GREEN)
             }
         }
     }
