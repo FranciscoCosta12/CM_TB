@@ -33,9 +33,9 @@ class Check_map : AppCompatActivity() {
         for(i in idArray.indices){
             val button = intent.getStringExtra("button")
             val status = intent.getStringExtra("status")
-            if(status == "false"){
+            if(button == (i+1).toString() && status == "false"){
                 findViewById<Button>(idArray[i]).setBackgroundColor(Color.RED)
-            }else if(status == "true"){
+            }else if(button == (i+1).toString() && status == "true"){
                 findViewById<Button>(idArray[i]).setBackgroundColor(Color.GREEN)
             }else{
                 //findViewById<Button>(idArray[i]).setBackgroundColor(Color.GREEN)
